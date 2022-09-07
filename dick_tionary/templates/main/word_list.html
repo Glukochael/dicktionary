@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Словарик
+{% endblock %}
+
+{% block content %}
+    {% if words %}
+        {% for w in words %}
+            <div class="alert alert-warning mt-2">
+                <h4>{{ w.name }}</h4>
+                <p> {{w.definition}} </p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p> Добавь хоть одно слово, дебил! </p>
+    {% endif %}
+{% endblock %}
