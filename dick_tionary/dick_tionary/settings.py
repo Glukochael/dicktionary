@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'dick_tionary.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dicktionary',
-        'USER': 'danilo',
-        'PASSWORD': '1448',
+        'USER': 'paramon',
+        'PASSWORD': 'paramosha',
         'HOST': 'localhost',
         'PORT': '',
     }
